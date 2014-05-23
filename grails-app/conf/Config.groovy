@@ -17,11 +17,12 @@ default_config = "/data/${appName}/config/${appName}-config.properties"
 if(!grails.config.locations || !(grails.config.locations instanceof List)) {
     grails.config.locations = []
 }
-if (new File(default_config).exists()) {
+if (default_config) {
     println "[${appName}] Including default configuration file: " + default_config;
     grails.config.locations.add "file:" + default_config
 } else {
     println "[${appName}] No external configuration file defined."
+    runWithNoExternalConfig = true
 }
 
 println "[${appName}] (*) grails.config.locations = ${grails.config.locations}"
@@ -30,20 +31,34 @@ println "default_config = ${default_config}"
 /******************************************************************************\
  *  SKINNING
 \******************************************************************************/
-skin.layout = 'asbp'
-skin.orgNameLong = "The Australian Seed Bank"
-skin.orgNameShort = "ASBP"
+skin.layout = 'tepapa'
+skin.orgNameLong = "The Living Aotearoa - Biodiversity Portal"
+skin.orgNameShort = "The Living Aotearoa"
+skin.attribution = "This research has been funded by the New Zealand Department of Conservation, under a TFBIS grant."
 // whether crumb trail should include a home link that is external to this webabpp - ala.baseUrl is used if true
 skin.includeBaseUrl = true
 //skin.headerUrl = "classpath:resources/generic-header.jsp" // can be external URL
 //skin.footerUrl = "classpath:resources/generic-footer.jsp" // can be external URL
 skin.fluidLayout = true // true or false
+site.jurisdiction.name = "New Zealand"
+site.jurisdiction.code = "NZ"
+
+map.defaultCentreCoords = "-41.0,174.0"
+map.defaultLatitude = "-41.0"
+map.defaultLongitude = "174.0"
+map.defaultZoom = "5"
+map.zoomOutsideScopedRegion = false
+suppressIssues=missingCoordinatePrecision
+
+facets.exclude = "dataHubUid,year,day,modified,left,right,provenance,taxonID,preferredFlag,outlierForLayers,speciesGroups,associatedMedia,images,userQualityAssertion,speciesHabitats,duplicationType,taxonomicIssues,subspeciesID,nameMatchMetric,sounds,missingCoordinatePrecision"
+facets.hide = "genus,order,class,phylum,kingdom,raw_taxon_name,rank,interaction,raw_state_conservation,biogeographic_region,year,institution_uid,collection_uid"
+facets.include = "establishment_means,user_assertions,assertion_user_id,name_match_metric,duplicate_type,alau_user_id,raw_datum,raw_sex,life_stage,elevation_d_rng,identified_by,species_subgroup"
 
 defaultListView = '' // 'mapView' or 'listView'
 chartsBgColour = "#FFFFFF"
 
-// Data hub UID needed for asbp records - dh4
-biocache.queryContext = "data_hub_uid:dh4"
+// Data hub UID needed for tepapa records - dh7
+biocache.queryContext = "data_hub_uid:dh7"
 
 security.cas.appServerName = "http://dev.ala.org.au:8080"
 security.cas.casServerName = 'https://auth.ala.org.au'
