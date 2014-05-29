@@ -5,9 +5,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="app.version" content="${g.meta(name:'app.version')}"/>
-    <meta name="app.build" content="${g.meta(name:'app.build')}"/>
-    <meta name="svn.revision" content="${g.meta(name:'svn.revision')}"/>
+    <alatag:addApplicationMetaTags />
     <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1">
 
     <link rel="shortcut icon" href="${request.contextPath}/images/tepapa/favicon.ico">
