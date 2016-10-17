@@ -105,7 +105,7 @@
         <ul id="nav-site">
             <li><a href="${request.contextPath}/">Home</a></li>
             <li class="${(section=='about')?'selected':''}"><a href="${request.contextPath}/help/about.html">About</a></li>
-            <li class="${(section=='termsofuse')?'selected':''}"><a href="${request.contextPath}/help/termsofuse.html">Terms of use</a></li>
+            <li class="${(section=='termsofuse')?'selected':''}"><a href="${request.contextPath}/help/termsOfUse.html">Terms of use</a></li>
             <li class="${(section=='help')?'selected':''}"><a href="${request.contextPath}/help/help.html">Help</a></li>
             <li class="${(section=='search')?'selected':''}"><a href="${request.contextPath}/search">Search</a></li>
             <li class="${(section=='news')?'selected':''}"><a href="${request.contextPath}/help/news.html">News</a></li>
