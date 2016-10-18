@@ -64,6 +64,9 @@
     </div>
 </header>
 <div class="errors">
+    <h1>
+        An error occurred:
+    </h1>
     <ul class="errors">
         <g:renderException exception="${exception}" />
     <ul>
