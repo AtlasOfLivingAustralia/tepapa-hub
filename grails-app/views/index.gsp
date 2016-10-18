@@ -1,9 +1,11 @@
+<g:set var="orgNameLong" value="${grailsApplication.config.skin.orgNameLong}"/>
+<g:set var="orgNameShort" value="${grailsApplication.config.skin.orgNameShort}"/>
 <!DOCTYPE HTML>
 <html dir="ltr" lang="en-US">
 <head>
     <meta name="layout" content="ajax"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Welcome to ${fullName}</title>
+    <title>Welcome to ${orgNameLong}</title>
     <link rel="shortcut icon" href="${request.contextPath}/images/tepapa/favicon.ico" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <r:require modules="tepapa" />
