@@ -60,7 +60,7 @@
     </h1>
     <ul class="errors">
         <g:renderException exception="${exception}" />
-    <ul>
+    </ul>
 <g:if test="${flash.message}">
     <ul class="errors">
         <li>${flash.message}</li>
