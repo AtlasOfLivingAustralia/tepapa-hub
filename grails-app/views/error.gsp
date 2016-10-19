@@ -54,15 +54,6 @@
         </ul>
     </div>
 </nav>
-<header id="site-header">
-    <div class="inner">
-        <section>
-            <h1>LIVING AOTEAROA</h1>
-            <h2>Demonstration site</h2>
-            <button class="ac_input freetext" id="explore-here" data-link="${request.contextPath}/search">EXPLORE HERE</button>
-        </section>
-    </div>
-</header>
 <div class="errors">
     <h1>
         An error occurred:
@@ -70,16 +61,6 @@
     <ul class="errors">
         <g:renderException exception="${exception}" />
     <ul>
-</div>
-<div class="inner">
-    <section>
-        <div id="participants">
-            PARTICIPATING ORGANISATIONS:
-            <br/>
-            <a href="http://www.tepapa.govt.nz/" target="_blank"><img src="${request.contextPath}/images/tepapa/tepapa-logo.png" alt="tepapa logo"/></a>
-            <a href="http://www.niwa.co.nz/" target="_blank"><img src="${request.contextPath}/images/tepapa/niwa-colour-50.png" alt="niwa logo" style="vertical-align:top;margin-top:35px;"/></a>
-        </div>
-    </section>
 </div>
 <footer>
     <div class="inner">
