@@ -1,3 +1,5 @@
+## This hub is no longer being supported
+
 ### tepapa-hub   [![Build Status](https://travis-ci.org/AtlasOfLivingAustralia/tepapa-hub.svg?branch=master)](https://travis-ci.org/AtlasOfLivingAustralia/tepapa-hub)
 
 Deploying a new version of tepapa-hub to Nexus
